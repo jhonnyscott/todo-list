@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #000 0%, #00eafa 50%, #fff 100%);
+}
+
+#myLister {
+    margin: 20px auto;
+    border-radius: 30px;
+    padding: 25px;
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+}
+
+
+#container {
+  margin: 0px auto;
+  width: min(90vw, 500px);
+  border-radius: 30px;
+  padding: 25px;
+  background-color: white;
+  text-align: center;
+}
+
+#container header h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#add-tasks {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+#add-tasks input {
+  width: 90%;
+  height: 100%;
+  border: 1px solid rgb(160, 160, 160);
+  font-size: 17px;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+
+#add-tasks button {
+  width: 100px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+#container p {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  color: rgb(150, 150, 150);
+}
+
+.button-task {
+  display: flex;
+  justify-content:space-between;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.button-task #mover-cima, #mover-baixo {
+  background-color: white;
+  color:black;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.button-task #remover-selecionado {
+  background-color: #00eafa;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.todo-list ol {
+  list-style: none;
+}
+
+li {
+  background-color: #f2f2f2;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  padding: 0 15px;
+}
+
+.button-list {
+  margin-top: 20px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.button-list #apaga-tudo, #remover-finalizados {
+  background-color: #fff;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.button-list #salvar-tarefas {
+  border: none;
+  outline: none;
+  background-color: #00eafa;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.selected {
+  background-color: rgb(128, 128, 128);
+}
+.completed {
+  text-decoration:line-through solid rgb(0, 0, 0);
+  font-style: italic;
+}
+
+.button-list #apaga-tudo {
+  background-color: #000;
+  color: white;
+}

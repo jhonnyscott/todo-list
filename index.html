@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lister</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="myLister">MY LISTER</h1>
+    <section id="container">
+        <header>
+          <h1>Minha Lista de Tarefas</h1>
+        </header>
+        <div id="add-tasks">
+          <input type="text" id="texto-tarefa" placeholder="Adicione sua tarefa...">
+          <button id ="criar-tarefa">+</button>
+        </div>
+        <div class="button-task">
+          <p id ='funcionamento'>Clique duas vezes em um item para marcá-lo como completo</p>
+          <button id="mover-cima">▲</button>
+          <button id="mover-baixo">▼</button>
+          <button  id="remover-selecionado">x</button>
+        </div>
+        <div class="todo-list">
+          <ol id = "lista-tarefas"></ol>
+        </div>
+        <div class="button-list">
+          <button id="apaga-tudo">Limpar lista</button>
+          <button id="remover-finalizados">Limpar concluídos</button>
+          <button id="salvar-tarefas">Salvar tarefas</button>
+        </div>
+      </section>
+      <script src="script.js"></script>
+</body>
+</html>
